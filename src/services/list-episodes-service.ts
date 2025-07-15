@@ -1,9 +1,9 @@
-import { FilterPodcastModel } from "../models/filter-podcast-model";
+import { PodcastTransferModel } from "../models/podcast-transfer-model";
 import { repositoryPodcast } from "../repositories/podcasts-repository";
 import { StatusCode } from "../utils/status-code";
 
-async function serviceListEpisodes() {
-  const responseFormat: FilterPodcastModel = {
+const serviceListEpisodes = async (): Promise<PodcastTransferModel> => {
+  const responseFormat: PodcastTransferModel = {
     statusCode: StatusCode.NO_CONTENT,
     body: [],
   };
@@ -16,6 +16,6 @@ async function serviceListEpisodes() {
   }
 
   return responseFormat;
-}
+};
 
 export { serviceListEpisodes };

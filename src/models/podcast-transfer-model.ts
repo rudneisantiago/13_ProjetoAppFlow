@@ -1,7 +1,7 @@
 import { StatusCode } from "../utils/status-code";
 import { PodcastModel } from "./podcast-model";
 
-export interface FilterPodcastModel {
+export interface PodcastTransferModel {
   statusCode: StatusCode;
   body: PodcastModel[];
 }
