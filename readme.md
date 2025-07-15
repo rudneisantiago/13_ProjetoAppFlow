@@ -18,7 +18,9 @@ Podcasts feitos em vídeo
 
 ## Como
 
-Retornar em uma api rest (json) o nome do podcast, nome do episódio, imagem de capa, link e categoria
+GET: retorna lista de episódios
+
+response:
 
 ```js
 [
@@ -39,4 +41,19 @@ Retornar em uma api rest (json) o nome do podcast, nome do episódio, imagem de 
     category: ["esporte", "corrida"],
   },
 ];
+```
+
+GET: retorna lista de episódios baseado em um parâmetro enviado pelo client do nome do podcast
+
+resposne:
+
+```js
+  {
+    podcastName: "flow",
+    episode: "CBUM - Flow #319",
+    videoId: "pQSuQmUfS30",
+    cover: "https://i.ytimg.com/vi/pQSuQmUfS30/maxresdefault.jpg",
+    link: "https://www.youtube.com/watch?v=pQSuQmUfS30",
+    category: ["saúde", "bodybuilder"],
+  },
 ```
