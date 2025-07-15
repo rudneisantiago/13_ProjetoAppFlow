@@ -16,5 +16,11 @@
     "episode": "Episódio",
     "videoId": "aidi",
     "category": ["esporte", "corrida"]
+  },
+  {
+    "podcastName": "venus",
+    "episode": "Xuxa",
+    "videoId": "111",
+    "category": ["baixinhos"]
   }
 ]
